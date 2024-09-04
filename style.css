@@ -26,6 +26,7 @@
     padding: 50px 60px 70px;
     text-align: center;
     border-radius: 25px;
+    height: 500px;
     
     
     
@@ -53,7 +54,7 @@
 }
 .input-field{
     background: white;
-    margin: 15px 0;
+    margin: 15px 0 10px;
     border-radius: 10px;
     align-items: center;
     max-height: 400px;
@@ -65,6 +66,7 @@
 .input{
     width: 100%;
     background: transparent;
+    border-radius: 10px;
     border: 0;
     outline: 0;
     padding: 19px 16;
@@ -92,4 +94,7 @@
 .google {
     background-color: #dd4b39;
     color: white;
+  }
+  ::placeholder{
+    text-align: center;
   }
