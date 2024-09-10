@@ -8,21 +8,26 @@
 </head>
 <body>
 <div class="container">
-    <div class="form-box">
-        <h1 id="title">SIGN IN</h1>
+    <div class="form-box"> 
+        <h1 id="title">Login</h1>
         <form>
-            <div class="input-group" style="margin-top: 60px;">
+            <div class="input-group">
                 <div class="input-field" id="nameField">
-                    <input type="email" placeholder="Email/ussername" style="font-size: 20px;height: 40px; width: 350px; margin-left: -40px;
-                     border-style: double; border-radius: 15px;margin-left: -20px; " >
+                    <input type="email" placeholder="Email/ussername" class="email">
                 </div>
                 <div class="input-field" id="nameField">
-                    <input type="password" placeholder="Password" style="font-size: 20px;
-                    height: 40px; width: 280px; border-style: double;margin-left: -25px;border-radius: 15px;margin-left: 0px; " >
+                    <input type="password" placeholder="Password" class="passward">
                 </div>
-                <div class="btn-field">
-                    <button type="button" id="signupbtn" style=" width: 440px;height: 60px;color: whitesmoke;background-color: rgb(18, 102, 211); margin-left: -60px;border-radius: 0.5px;">Sign in</button>
+                <a href="http://127.0.0.1:5500/forget_passward.html" ; class="shift-link" role="button">Forget password?</a>
+                <button  type="button" id="signinbtn">Login</button>
+             
+                
+                <p class="para">Don't have account</p><a class="btn"  href="http://127.0.0.1:5500/index_signup_page.html";role="button";>Signup</a>
+                <div class="line">
+                    <span class="line1"><hr></span><span class="pa"><p>Or</p></span><span class="line2"><hr></span>
                 </div>
+                <a href="#" class="fbbtn"> Login with Facebook</a>
+                <a href="#" class="googlebtn">Login with Google+</a>
             </div>
         </form>
     </div>

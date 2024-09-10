@@ -5,47 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration-Form</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href= 
-    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"> 
 </head>
 <body>
     <div class="container">
         <div class="form-box">
-            <h1 id="title">SIGN UP</h1>
+            <h1 id="title">Signup</h1>
             <form>
                 <div class="input-group" >
-                    <div class="input-field" id="nameField" style="display: flex; gap: 10px; margin-left: 0px;">
-
-                        <input type="text" placeholder="First Name" style="font-size: 20px;height: 40px; width: 150px; border-style: double;border-radius: 15px; ">
-                        <input type="text" placeholder="Last Name" style="font-size: 20px;height: 40px; width: 150px; border-style: double;border-radius: 15px; ">
-                    </div>
-                    <div class="input-field" id="nameField">
-                        <input type="email" placeholder="Email" style="font-size: 20px;height: 40px; width: 350px; margin-left: -40px; border-style: double; border-radius: 15px;margin-left: -20px; " >
-                    </div>
-                    <div class="input-field" id="nameField">
-                        <input type="password" placeholder="Password" style="font-size: 20px;height: 40px; width: 280px; border-style: double;margin-left: -25px;border-radius: 15px;margin-left: 0px; " >
-                    <div class="input-field" id="nameField">
-                        <input type="cpassword" placeholder="Confirm password" style="font-size: 20px;height: 40px; width: 280px; border-style: double;margin-left: -25px;border-radius: 15px;margin-left: 0px; ">
-                    <div class="btn-field">
-                        <button type="button" id="signupbtn" style=" width: 440px;height: 60px;color: whitesmoke;background-color: rgb(18, 102, 211); margin-left: -60px;border-radius: 0.5px;">Signup</button>
-                    </div>
-                    <p>Already have an account?<button style="border: none; color: #1b10ef; background-color: none;">Login</button></p>
-                    <button style="border: none; color: #1b10ef; background-color: none;">Forget password</button>
                     
+                    <input type="email" class="email" placeholder="Email">
+                    
+                    
+                    <input type="password" class="passward" placeholder="Password">
+                    
+                    
+                    <input type="password" class="cpassward" placeholder="Confirm password">
+                    
+                    <button type="button" class="signupbtn">Signup</button>
+                    <p class="para">Already have an account?</p> <a href="http://127.0.0.1:5500/index_signin_page.html" class="buttona" role="button">Login</a>
+                    <div class="line">
+                        <span class="line1"><hr></span><span class="pa"><p>Or</p></span><span class="line2"><hr></span>
                     </div>
-                    <div class="col">
-                        <a href="#" class="fb btn">
-                            <i class="fa fa-facebook fa-fw"></i> Login with Facebook
-                          </a>
-                          <a href="#" class="google btn">
-                            <i class="fa fa-google fa-fw"></i> Login with Google+
-                          </a>
-                    </div>
+                    <a href="#" class="fbbtn"> Login with Facebook</a>
+                    <a href="#" class="googlebtn">Login with Google+</a>
                 </div>
+                
+                   
+                  
             </form>
         </div>
     </div>
-
-   <script src="script.js"></script> 
 </body>
 </html>
