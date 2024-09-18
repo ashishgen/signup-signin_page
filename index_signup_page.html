@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<script src="signup.js"></script>
+   
     <div class="container">
         <div class="form-box">
             <h1 id="title">Signup</h1>
-            <form>
+            <form action="">
                 <div class="input-group" >
                     
-                    <input type="email" class="email" placeholder="Email">
+                    <input type="email" class="email" id="email" name="email" placeholder="Enter Email" required>
                     
                     
-                    <input type="password" class="passward" placeholder="Password">
+                    <input type="password" class="passward" id="passward" name="passward" placeholder="Enter Password" required>
                     
                     
-                    <input type="password" class="cpassward" placeholder="Confirm password">
+                    <input type="password" class="cpassward" id="cpassward" name="cpassward" placeholder="Enter Confirm password" required>
                     
-                    <button type="button" class="signupbtn">Signup</button>
-                    <p class="para">Already have an account?</p> <a href="http://127.0.0.1:5500/index_signin_page.html" class="buttona" role="button">Login</a>
+                    <button  type="button" onclick="savedata()" class="signupbtn" id="save_btn">Signup</button>
+                    <p class="para">Already have an account?</p> <a href="file:///C:/Users/ashis/OneDrive/Desktop/Assignment/signup-signin_page/index_signin_page.html" class="buttona"  role="button">Login</a>
                     <div class="line">
                         <span class="line1"><hr></span><span class="pa"><p>Or</p></span><span class="line2"><hr></span>
                     </div>
@@ -35,5 +37,6 @@
             </form>
         </div>
     </div>
+  
 </body>
 </html>
