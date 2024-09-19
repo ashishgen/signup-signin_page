@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFILE</title>
+</head>
+<body>
+    <div class="container">
+            <h1 style="text-align: center;">Profile Page</h1>
+             <br>
+             <h1 style="color:red;">Welcome to your profile - page</h1>
+             <br>
+             <br>
+             <h3 style="font-size:25px;font-weight: 300; display: inline;margin: 10px;"> Email  :
+            <script>
+               var email= document.write(localStorage.getItem("users"));
+               console.log(email)
+            </script></h3>
+           <button onclick="logout()" style="color:blueviolet;font-size: 30px;
+           display:flex;padding: 0.5px; margin-left: 500px; margin-top: 50px;">Logout</button>
+        </div>
+    </div>
+    <script src="signup.js"></script>
+    <script src="signin.js"></script> 
+    <script src="profile.js"></script>
+</body>
+</html>
