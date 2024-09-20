@@ -1,35 +1,51 @@
-function savedata(){
-    let email,passward,cpassward;
+function savedata() {
+    // if(user_index[0] == [{"email": email}]){
+    //     alert("data already stored")
+    // }
+    // location.replace("./http://127.0.0.1:5500/index_signup_page.html")
+    let email, passward, cpassward;//variable declare
     email = document.getElementById("email").value
     passward = document.getElementById("passward").value
     cpassward = document.getElementById("cpassward").value
 
-    let user_index = new Array();//Initialize user_index as a new array
-    user_index = JSON.parse(localStorage.getItem("users"))?JSON.parse(localStorage.getItem("users")):[]
-    //Retrieve and parse the data from local storage
-    //localStorage.getItem("users"): Retrieves the item named “users” from local storage.
-    // JSON.parse(...): Converts the JSON string back into a JavaScript object.
-    // The ternary operator ? : checks if the parsed data is truthy (i.e., not null or undefined). 
-    // If it is, it assigns the parsed data to user_index; otherwise, it assigns an empty array.
-    if(passward==cpassward){
-        alert("Successful Registered")
+    if (email.length === 0) {
+        return alert("please type email id")
     }
-    else{
-        alert("passward not matched")
+    if (passward.length === 0) {
+        return alert("please type passward")
     }
- 
+    if (cpassward.length === 0) {
+        return alert("please type confirm passward")
+    }
+    if (passward !== cpassward) {
+        return alert("passward and confirm passward not Matched")
+    }
+    let exist_user = JSON.parse(localStorage.getItem("user"))
+    if (!exist_user) {
+        let user = { "email": email, "passward": passward, "cpassward": cpassward }
+        console.log(user)
 
-     user_index.push({
-            "email": email,
-            "passward":passward,
-            "cpassward": cpassward
+        let user_list = [];
+        user_list.push(user);
+        localStorage.setItem("user", JSON.stringify(user_list))
 
+    }
+    else {
+        let user = { "email": email, "passward": passward, "cpassward": cpassward }
+        console.log(user)
+
+        let is_user_exist = exist_user.filter((u) => {
+            if (u.email === user.email) {
+                return u;
+            }
         })
-       
-
-        localStorage.setItem("users",JSON.stringify(user_index));
-        //JSON.stringify() to convert an object to a JSON string
-        //const obj = { name: "Alice", age: 25 };
-        // const jsonString = JSON.stringify(obj);
-        // console.log(jsonString); // Output: {"name":"Alice","age":25}
+        if (is_user_exist.length > 0) {
+            return alert("user already exist")
+        }
+        exist_user.push(user);
+        localStorage.setItem("user", JSON.stringify(exist_user))
+        
     }
+
+    return alert("user Registered Successfully")
+}
