@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="profile.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROFILE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cake Town</title>
 </head>
 <body>
     <div class="container">
-            <h1 style="text-align: center;">Profile Page</h1>
-             <br>
-             <h1 style="color:red;">Welcome to your profile - page</h1>
-             <br>
-             <br>
-             <h3 style="font-size:25px;font-weight: 300; display: inline;margin: 10px;"> Email  :
-            <script>
-               var email= document.write(localStorage.getItem("users"));
-               console.log(email)
-            </script></h3>
-           <button onclick="logout()" style="color:blueviolet;font-size: 30px;
-           display:flex;padding: 0.5px; margin-left: 500px; margin-top: 50px;">Logout</button>
+        <div class="Nav-Header">
+            <a id="welcome">Welcome to Cake Town</a>
+            <input type="text" id="search" placeholder="Search.."><b><i class="fa fab fa-search  fa-lg" style="margin-left:4px; color: bisque;"></i></b>
+            <a href="#">Add to cart</a>
+            <a href="#">Menu</a>
+            <a href="#">Order History</a>
+            <div class="cart"><i class="fa fas fa-shopping-cart" style="color: bisque;"></i></div>
+            </div>
+        <div class="content">
         </div>
-    </div>
+        <div class="footer">
+            <p>Footer</p>
+        </div>
     
     <script src="signin.js"></script> 
     <script src="profile.js"></script>
