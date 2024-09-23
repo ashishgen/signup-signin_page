@@ -2,57 +2,102 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+    
 }
-.Nav-Header{
-    height: 80px;
-    overflow: hidden;
-    background-color: #333;
+section{
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
 }
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    }
 
-#welcome{
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align:right;
-    padding: 30px 150px;
-    text-decoration: none;
-    font-family:cursive;
-    font-size: 30px;
-}
-#search{
-     height: 25px;
-     width: 250px;
-     padding: 16px;
-     margin-left: 200px;
-     border-radius:5cqb;
-     margin-top: 20px;
-}
-.cart{
-    float: right;
-    padding-right: 50px;
-    margin-right: -388px;
-    margin-top: 30px;
-}
-.Nav-Header a{
-    margin-left: 0px;
-    margin-right: 10px;
-    float: right;
-    display: block;
-    color: #f2f2f2;
-    text-align:right;
-    padding: 30px 20px;
-    text-decoration: none;
-  }
-  .footer {
-    color: aliceblue;
-    position: fixed;
+nav{
     width: 100%;
-    margin-top:600px;
-    background-color: #310f0f;
-    padding: 20px;
-  }
-  body {
-    background-image: url('cake.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    height: 80px;
+    background-color: #494643;
+    line-height: 80px;
+    padding: 0px 70px;
+    position: fixed;
+}    
+nav .brand{
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+nav .brand p{
+    float: left;
+    color:bisque;
+    text-transform: uppercase;
+}
+nav ul{
+    float: right;
+    margin-left: 70px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    padding: 0px 13px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color: #3e4046;
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+}
+.child2{
+    background-color: rgb(36, 164,138);
+}
+.child3{
+    background-color: rgb(211,79, 79);
+}
+.child4{
+    background-color: rgb(67, 91, 175);
+}
+.child5{
+    background-color: rgb(191, 64, 191);
+}
+.child6{
+    background-color: rgb(35, 235, 235);
+}
+.child7{
+    background-color: rgb(13, 226, 155);
+}
+.child8{
+    background-color: rgb(243, 145, 18);
+}
+.child9{
+    background-color: rgb(222, 21, 62);
+}
+.child10{
+    background-color: rgb(122, 179, 228);
+}
+nav ul input{
+    width: 200px;
+    height: 25px;
+    text-align: center;
+    padding: 15px 30px;
+    border-radius: 15px;
+    margin-right: -10px;
+    
+}
+nav ul li i{
+    margin-right: 10px;
+    color: bisque;
+}
+#cart{
+    margin-left: -20px;
 }
